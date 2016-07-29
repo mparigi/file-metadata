@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <title>File Metadata Microservice</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+    
+    <style type="text/css">
+        body {
+            background-color: #3498db;
+            transition: background-color 1s;
+        }
+
+        h3 {
+            font-family: 'Lato', sans-serif;
+            font-size: 50px;
+            font-weight: 100;
+            color: white;
+            text-align: center;
+            margin: 60px;
+        }
+        
+        .jumbotron {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+            color: inherit;
+            background-color: #1abc9c;
+            border-radius: 30px;
+        }
+        
+        .container {
+            padding-right: 750px;
+            padding-left: 750px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    </style>
+    
+
+    <body>
+        <h3>Submit a file to view its filesize!</h3>
+        <div class="container">
+            <form action="/get-file-size" method="post" enctype="multipart/form-data" align="center" class="jumbotron">
+                <input type="file" name="file">
+                <input type="submit">
+            </form>
+        </div>
+    </body>
+    
+</html>
